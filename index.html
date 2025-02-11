@@ -12,6 +12,41 @@
   height: 100vh;
 }
 
+.titulo_linea {
+  background-color: #233a57;
+  height: auto; 
+  padding: 10px;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titulo_linea h1 {
+  text-align: right;
+  font-size: clamp(40px, 5vw, 90px);
+  padding-top: 5.5%;
+  margin-right: 7%;
+  margin-bottom: -1%;
+}
+
+.titulo_linea h2 {
+  text-align: right;
+  margin-bottom: 5%;
+  margin-right: 7%;
+  font-size: clamp(13.32px, 3vw, 28.97px); 
+}
+
+.yo {
+  position: absolute;
+  top: 10%; 
+  left: 12%;
+  border: 13px solid white;
+  width: clamp(42px, 42vw, 420px); 
+  height: auto; 
+  max-height: 420px; 
+}
+
 .contenedor {
   display: flex;
   gap: 10px;
@@ -31,41 +66,6 @@
   padding-top: 5%;
 }
 
-.columna2 {
-  flex: 0.502;
-  background-color: #ffffff;
-}
-
-.columna3 {
-  flex: 0.055;
-  background-color: #233a57;
-}
-
-.titulo_linea h1 {
-  text-align: right;
-  font-size: clamp(40px, 5vw, 90px);
-  padding-top: 5.5%;
-  margin-right: 7%;
-  margin-bottom: -1%;
-}
-
-.titulo_linea h2 {
-  text-align: right;
-  margin-bottom: 5%;
-  margin-right: 7%;
-  font-size: clamp(13.32px, 3vw, 28.97px); 
-}
-
-.titulo_linea {
-  background-color: #233a57;
-  height: auto; 
-  padding: 10px;
-  padding-right: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .columna h1 {
   font-size: clamp(21.78px, 3vw, 48.97px);
   color: #021d54;
@@ -74,26 +74,53 @@
 }
 
 .columna ul {
-  padding-left: 33%;
+  padding-left: 29%;
   color: #021d54;
   font-size: clamp(11.52px, 2vw, 25.90px);
   line-height: 1.5;
 }
 
-.yo {
-  position: absolute;
-  top: 10%; 
-  left: 12%;
-  border: 13px solid white;
-  width: clamp(42px, 42vw, 420px); 
-  height: auto; 
-  max-height: 420px; 
+.columna2 {
+  flex: 0.502;
+  background-color: #ffffff;
+  padding-left: 4%;
+  color: #021d54;
 }
+
+.columna2 h1 {
+  font-size: clamp(21.78px, 3vw, 48.97px);
+}
+
+.columna2 h2{
+  font-size: clamp(13.56px, 3vw, 30.49px);
+}
+
+.columna2 h3 {
+  font-size: clamp(11.51px, 3vw, 25.88px);
+}
+
+.columna2 h4 , td {
+  font-size: clamp(9.8px, 3vw, 22.03px);
+}
+
+.columna2 p {
+  font-size: clamp(9.24px, 3vw, 20.78px);
+}
+.columna2 td {
+  padding-right: 50px;
+}
+
+.columna3 {
+  flex: 0.055;
+  background-color: #233a57;
+}
+
 .espacio-blanco {
   background-color: white;
   width: 100%;
   height: 30px;
 }
+
     </style>
 </head>
 <body>
@@ -109,13 +136,63 @@
         <div class="columna">
             <h1>CONTACTO</h1>  
             <ul>
-              <li>777-387-7491</li>
-              <li>ramisaac23@gmail.com</li>
-              <li>www.babanito.com</li>
-              <li>Calle cualquiera 123, <br>Cualquier lugar, CP:12345</li>
+              <li style="list-style: none; padding-left: 50px; background: url('telefono.png') no-repeat left center; background-size: 32px; margin-bottom: 15px;"><a href="https://wa.me/527773877491">777-387-7491</a></li>
+              <li style="list-style: none; padding-left: 50px; background: url('sobre.png') no-repeat left center; background-size: 32px; margin-bottom: 15px;"><a href="mailto:ramisaac23@gmail.com">ramisaac23@gmail.com</a></li>
+              <li style="list-style: none; padding-left: 50px; background: url('globo.png') no-repeat left center; background-size: 32px;"><a href="https://redflagsfit.wordpress.com/">www.redflagsfit.wordpress.com</a></li>
+              <li style="list-style: none; padding-left: 50px; background: url('ubi.png') no-repeat left center; background-size: 32px; padding-top: 20px;">Calle cualquiera 123, <br>Cualquier lugar, CP:12345</li>
+            </ul>
+            <h1>INFORMACIÓN</h1>
+            <ul style="padding-left: 33%;">
+              <li>Buena onda</li>
+              <li>Estudiante</li>
+              <li>Trabajador</li>
+
             </ul>
         </div>
-        <div class="columna2"></div>
+        <div class="columna2">
+        <h1>MI PERFIL</h1>
+        <p>asfasfdf</p>
+        <h1>EXPERIENCIA</h1>
+        <h2>ESTUDIANTE DE INGENIERIA</h2>
+        <h3>Universidad de montemorelos</h3>
+        <p>sgsfgsdf</p>
+        <h2>RECEPCIONISTA</h2>
+        <h3>Universidad de montemorelos</h3>
+        <p>sgsfgsdf</p>
+        <h2>REVISOR DE CODIGO</h2>
+        <h3>Himnario Adventista</h3>
+        <p>sgsfgsdf</p>
+        <h1>FORMACIÓN</h1>
+        <h2>UNIVERSIDAD DE MONTEMORELOS</h2>
+        <h3>(2024-2025)</h3>
+        <p>Estudiando ingenieria en sistemas computacionalee</p>
+        <h1>HERRAMIENTAS</h1>
+        <table>
+          <tr>
+            <td>JAVA</td>
+            <td>30%</td>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>35%</td>
+          </tr>
+          <tr>
+            <td>PYTHON</td>
+            <td>5%</td>
+          </tr>
+        </table>
+        <h1>IDIOMAS</h1>
+        <table>
+          <tr>
+            <td>ESPAÑOL</td>
+            <td>Nativo</td>
+          </tr>
+          <tr>
+            <td>INGLES</td>
+            <td>Nivel B1</td>
+          </tr>
+        </table>
+        </div>
         <div class="columna3"></div>
       </div>
       
